@@ -152,6 +152,81 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-使用hexo-GitHub搭建自己的博客网站" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/10/使用hexo-GitHub搭建自己的博客网站/">使用hexo+GitHub搭建自己的博客网站</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/10/使用hexo-GitHub搭建自己的博客网站/" class="archive-article-date">
+  	<time datetime="2019-03-10T10:34:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="前言：系统win10，已安装配置好node-js，git环境"><a href="#前言：系统win10，已安装配置好node-js，git环境" class="headerlink" title="前言：系统win10，已安装配置好node.js，git环境"></a>前言：系统win10，已安装配置好node.js，git环境</h4><h4 id="相关步骤："><a href="#相关步骤：" class="headerlink" title="相关步骤："></a>相关步骤：</h4><ol>
+<li><code>Github</code>账户注册和新建项目，项目必须要遵守格式：账户名<code>.github.io</code>，不然接下来会有很多麻烦。并且需要勾选<code>Initialize this repository with a README</code>。在建好的项目右侧有个<code>settings</code>按钮，点击它，向下拉到<code>GitHub Pages</code>，你会看到那边有个网址，访问它，你将会惊奇的发现该项目已经被部署到网络上，能够通过外网来访问它。 </li>
+<li>安装<code>Hexo</code>，在自己认为合适的地方创个文件夹，我是在<code>D</code>盘建了一个<code>blog</code>文件夹，然后鼠标右键<code>git bush here</code>行进入到git bash 界面。输入<code>npm install hexo -g</code>，开始安装<code>Hexo</code>。</li>
+<li>输入<code>hexo -v</code>，检查<code>hexo是</code>否安装成功。</li>
+<li>输入<code>hexo init</code>，初始化该文件夹（有点漫长的等待。。。）。看到后面的<code>“Start blogging with Hexo！&quot;</code>就说明初始化成功了。</li>
+<li>输入<code>npm install</code>，安装所需要的组件。</li>
+<li>输入<code>hexo g</code>，首次体验<code>Hexo</code>。</li>
+<li>输入<code>hexo s</code>，开启服务器，访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 网址，正式体验<code>Hexo</code>。</li>
+<li>将<code>Hexo</code>与<code>Github page</code>联系起来，<code>git</code>的<code>ssh key</code>及<code>user.name</code>，<code>user.email</code>先配置好，配置<code>Deployment</code>，在<code>blog</code>文件夹中，找到<code>_config.yml</code>文件，修改<code>repo</code> –&gt; <code>repository</code>的值为<code>git</code>项目的地址(<code>ssh</code>模式)；修改<code>repo</code> –&gt; <code>branch</code>的值为<code>master</code>。</li>
+<li>新建一篇博客，执行命令：<code>hexo new post “博客名”</code>，这时候在文件夹<code>blog\_posts</code>目录下将会看到已经创建的文件<code>博客名.md</code>。</li>
+<li>生成以及部署文章之前，需要安装一个扩展：<code>npm install hexo-deployer-git --save</code>；使用编辑器编好文章，使用命令：<code>hexo d -g</code>，生成并部署。</li>
+<li>部署成功后访问你的地址：<code>http://用户名.github.io</code>。那么将看到刚刚生成的文章。</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/10/使用hexo-GitHub搭建自己的博客网站/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-my-second-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
